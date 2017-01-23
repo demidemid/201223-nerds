@@ -6,95 +6,155 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="index-logo">
-        <img src="img/index-logo.png" width="" height="" alt="Nerds">
-      </div>
       <div class="container">
         <nav class="main-navigation">
-          <ul>
+          <div class="index-logo">
+            <a href="#">
+              <img src="img/index-logo.png" width="" height="" alt="Nerds">
+            </a>
+          </div>
+          <ul class="menu">
             <li>
-              <a href="#">Студия</a>
+              <a class="menu-item" href="#">Студия</a>
             </li>
             <li>
-              <a href="#">Клиенты</a>
+              <a class="menu-item" href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="menu-item" href="#">Магазин</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a class="menu-item" href="#">Контакты</a>
             </li>
           </ul>
+          <div class="basket">
+            <a class="menu-item" href="#">Корзина</a>
+          </div>
         </nav>
-        <div class="basket-block">
-          <a class="input" href="#">Корзина</a>
+        <div class="slider">
+          <div class="slade">
+            <h1 class="slade-title">Долго, дорого, скурпулёзно.</h1>
+            <p class="slade-text">Математически выверенный дизайн
+               для вашего сайта или мобильного приложения.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <div class="slade">
+            <h1 class="slade-title">Любим математику как никто другой.</h1>
+            <p class="slade-text">Никакого креатива, только математические формулы
+               для расчёта идеальных пропорций.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <div class="slade">
+            <h1 class="slade-title">Только ночь, только хардкор.</h1>
+            <p class="slade-text">Работать днём, как все? Мы против этого.
+            Ближе к полуночи работа только начинается</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <div class="slider-switch">
+            <input type="radio" id="slade-1">
+            <label for="slade-1"></label>
+
+            <input type="radio" id="slade-2">
+            <label for="slade-2"></label>
+
+            <input type="radio" id="slade-3">
+            <label for="slade-3"></label>
+          </div>
         </div>
       </div>
     </header>
-    <main class="container">
-      <div class="">
-        <b class="">Долго, дорого, скурпулёзно.</b>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="btn" href="#">Узнать больше</a>
-      </div>
-      <section class="features">
-        <div class="features-item">
-          <b class="features-name">Долго, дорого, скурпулёзно.</b>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="btn" href="#">Узнать больше</a>
-        </div>
-        <div class="features-item">
-          <b class="features-name">Веб-сайты</b>
-          <img src="img/laptop.png" width="" height="">
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="btn" href="#">Заказать</a>
-        </div>
-        <div class="features-item">
-          <b class="features-name">Приложения</b>
-          <img src="img/smartphone.png" width="" height="">
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="btn" href="#">Заказать</a>
-        </div>
-        <div class="features-item">
-          <b class="features-name">Презентации</b>
-          <img src="img/presentation.png" width="" height="">
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="btn" href="#">Заказать</a>
-        </div>
-      </section>
-      <div class="index-content">
-        <div class="index-content-left">
-          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-          <p>Исповедуем пронципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
-
-          Выполняем заказы на разработку:<br>
-            <ul>
+    <main>
+      <div class="container">
+        <section class="features">
+          <div class="features-item">
+            <img class="features-img" src="img/laptop.png" width="" height="">
+            <h2 class="features-name">Веб-сайты</h2>
+            <p class="features-text">Мир никогда не будет прежним
+                                     после того как увидит ваш сайт!</p>
+            <a class="btn" href="#">Заказать</a>
+          </div>
+          <div class="features-item">
+            <img class="features-img" src="img/smartphone.png" width="" height="">
+            <h2 class="features-name">Приложения</h2>
+            <p class="features-text">Покорите топ-10 приложений в
+                                     AppStore и Google Play</p>
+            <a class="btn" href="#">Заказать</a>
+          </div>
+          <div class="features-item">
+            <img class="features-img" src="img/presentation.png" width="" height="">
+            <h2 class="features-name">Презентации</h2>
+            <p class="features-text">Вы даже не подозреваете,
+                                     насколько вы изумительны!</p>
+            <a class="btn" href="#">Заказать</a>
+          </div>
+        </section>
+        <div class="content">
+          <div class="content-left">
+            <b class="content-left- fragment">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+            <p class="content-left-text">Исповедуем пронципы минимализма и чистоты.
+                                         Ставим математический расчёт превыше креатива.
+                                         Работаем не покладая рук, как роботы.</p>
+            <p class="content-text">Выполняем заказы на разработку:</p>
+            <ul class="content-list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для OS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
-        </div>
-        <div class="index-content-right">
-          <img src="img/logo.png" width="" height="">
-          C 2004 года любим точность во всём:<br>
+          </div>
+          <div class="content-right">
+            <img class="content-right-img" src="img/logo.png" width="" height="">
+            <p class="content-text">C 2004 года любим точность во всём:</p>
             <ul>
-              <li>146% уровень самоотдачи</li>
-              <li>100% соблюдение сроков</li>
-              <li>50% минимальная предоплата</li>
+              <li><span class="figure">146</span><sup>%</sup> <span class="criterion">уровень самоотдачи</span></li>
+              <li><span class="figure">100</span><sup>%</sup> <span class="criterion">соблюдение сроков</span></li>
+              <li><span class="figure">50</span><sup>%</sup> <span class="criterion">минимальная предоплата</span></li>
             </ul>
+          </div>
+        </div>
+        <div class="logos">
+          <div class="logos-htmlacademy">
+            <a href="">htmlacademy</a>
+          </div>
+          <div class="logos-bardershop">
+            <a href="">bardershop</a>
+          </div>
+          <div class="logos-pink">
+            <a href="">pink</a>
+          </div>
+          <div class="logos-mishka">
+            <a href="">mishka</a>
+          </div>
         </div>
       </div>
     </main>
+    <div class="map">
+
+    </div>
     <footer class="main-footer">
       <div class="container">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <div class="footer-text">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей</p>
-        </section>
+      </div>
       </div>
     </footer>
+    <div class="form-message">
+      <form action="" method="post">
+            <input type="text" name="login" id="login-field">
+            <label for="login-field">Ваше имя</label>
+            <br><br>
+            <input type="text" name="email" id="email-field">
+            <label for="email-field">Ваш e-mail</label>
+            <br><br>
+            <textarea></textarea>
+
+            <input type="submit" value="Отправить">
+        </form>
+   </div>
   </body>
 </html>
