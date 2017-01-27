@@ -1,20 +1,20 @@
 body {
   font-family: "Roboto";
-  font-size: 16;
+  font-size: 16px;
   line-height: 24px;
   color: #283136;
   font-weight: normal;
 }
 
 h1 {
-  font-size: 55;
+  font-size: 55px;
   line-height: 55px;
   color: #000000;
   font-weight: normal;
 }
 
 h2 {
-  font-size: 24;
+  font-size: 24px;
   line-height: 30px;
   color: #000000;
   font-weight: bold;
