@@ -90,6 +90,8 @@ h2 {
 }
 
 .map {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-image: url("../img/map.jpg");
 }
 
@@ -99,8 +101,6 @@ h2 {
   padding: 50px;
   margin-left: 140px;
   background-color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .footer-social {
