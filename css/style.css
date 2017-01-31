@@ -19,3 +19,67 @@ h2 {
   color: #000000;
   font-weight: bold;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation {
+  width: 1160px;
+  background-color: red;
+}
+
+.slider {
+  width: 1160px;
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  margin-bottom: 80px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.content {
+  clear: both;
+  margin-bottom: 54px;
+}
+
+.content-left {
+  float: left;
+  padding-top: 80px;
+  width: 660px;
+}
+
+.content-right {
+  float: right;
+  width: 360px;
+  padding-top: 40px;
+  padding-left: 140px;
+}
+
+.logos {
+  clear: both;
+}
+
+.logo {
+  width: 260px;
+  margin-right: 40px;
+}
+
+.logo:last-child {
+  margin-right: 0;
+}
