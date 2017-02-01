@@ -91,6 +91,7 @@ h2 {
 
 .content-left {
   float: left;
+  padding-top: 40px;
   padding-bottom: 54px;
   width: 660px;
   font-size: 0;
@@ -100,22 +101,27 @@ h2 {
 .content-left-fragment {
   display: inline-block;
   padding-bottom: 35px;
-  font-size: 10px;
+  font-size: 16px;
 }
 
-.content-left-text {
+.content-left-paragraph1 {
+  margin: 0;
   display: inline-block;
   padding-bottom: 23px;
   font-size: 16px;
 }
 
-.content-text {
+.content-left-paragraph2 {
   display: inline-block;
+  padding-bottom: 47px;
   font-size: 16px;
 }
 
-.content-list {
+.content-left-list {
   display: inline-block;
+  text-align: left;
+  vertical-align: bottom;
+  padding-bottom: 35px;
   font-size: 16px;
 }
 
@@ -123,15 +129,23 @@ h2 {
 .content-right {
   float: right;
   width: 360px;
-  padding-top: 40px;
-  padding-left: 140px;
+  margin-left: 140px;
   outline: 2px solid black;
 }
 
 
 
 .content-right-img {
-  padding-top: 40px;
+  float: right;
+  padding-bottom: 40px;
+}
+
+.content-text-right {
+  text-align: center;
+}
+.content-list-right {
+  display: inline-block;
+  text-align: left;
 }
 
 .logos {
