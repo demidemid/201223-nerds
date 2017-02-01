@@ -38,7 +38,6 @@ h2 {
 }
 
 .log-menu-link {
-  font-size: 16px;
   display: inline-block;
   width: 160px;
   padding-right: 200px;
@@ -48,7 +47,6 @@ h2 {
   display: inline-block;
   vertical-align: middle;
   width: px;
-  font-size: 16px;
 }
 
 .menu-item {
@@ -60,7 +58,8 @@ h2 {
 .basket {
   display: inline-block;
   width: 160px;
-  padding-left: 180px;
+
+  vertical-align: middle;
   font-size: 16px;
 }
 
