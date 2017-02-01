@@ -29,12 +29,39 @@ h2 {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .main-navigation {
+  font-size: 0;
   width: 1160px;
   outline: 3px solid green;
+}
+
+.log-menu-link {
+  font-size: 16px;
+  display: inline-block;
+  width: 160px;
+  padding-right: 200px;
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: middle;
+  width: px;
+  font-size: 16px;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 110px;
+  font-size: 16px;
+}
+
+.basket {
+  display: inline-block;
+  width: 160px;
+  padding-left: 180px;
+  font-size: 16px;
 }
 
 .slider {
@@ -50,6 +77,7 @@ h2 {
   float: left;
   width: 300px;
   margin-right: 100px;
+  outline: 2px solid red;
 }
 
 .features-item:last-child {
@@ -59,19 +87,52 @@ h2 {
 .content {
   padding-top: 40px;
   padding-bottom: 75px;
+  outline: 2px solid green;
 }
 
 .content-left {
   float: left;
-  padding-top: 80px;
+  padding-bottom: 54px;
   width: 660px;
+  font-size: 0;
+  outline: 2px solid black;
 }
+
+.content-left-fragment {
+  display: inline-block;
+  padding-bottom: 35px;
+  font-size: 10px;
+}
+
+.content-left-text {
+  display: inline-block;
+  padding-bottom: 23px;
+  font-size: 16px;
+}
+
+.content-text {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.content-list {
+  display: inline-block;
+  font-size: 16px;
+}
+
 
 .content-right {
   float: right;
   width: 360px;
   padding-top: 40px;
   padding-left: 140px;
+  outline: 2px solid black;
+}
+
+
+
+.content-right-img {
+  padding-top: 40px;
 }
 
 .logos {
@@ -90,8 +151,6 @@ h2 {
 }
 
 .map {
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-image: url("../img/map.jpg");
 }
 
