@@ -202,15 +202,40 @@ h2 {
   margin-right: 140px;
 }
 
+.slider-title-price {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+.range {
+  width: 260px;
+}
+
+.range-item {
+  float: left;
+}
+
+.range-item:first-child {
+  padding-right: 40px;
+}
+
+.range-item-input {
+  width: 80px;
+}
+
 .catalog {
   float: right;
   width: 760px;
 }
 
 .title-2 {
+  float: left;
   width: 160px;
   margin: 0;
 }
+
+.slider-network {}
 
 .network-slide {
   display: block;
@@ -218,6 +243,11 @@ h2 {
 
 .option-slide {
   display: block;
+}
+
+.separate {
+  padding-top: 60px;
+  padding-bottom: 55px;
 }
 
 .separate-item {
@@ -230,6 +260,7 @@ h2 {
 }
 
 .layout-item {
+  width: 360px;
   float: left;
   padding-bottom: 36px;
 }
@@ -276,27 +307,39 @@ h2 {
 }
 
 .form-message {
-  width: 960px;
+  width: 760px;
   padding-top: 71px;
   padding-left: 100px;
   padding-right: 80px;
   padding-bottom: 85px;
 }
 
+.title-message {
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+.form-label {
+  display: block;
+}
+
+.input-text {
+    width: 356px;
+}
+
+.input-textarea {
+  width: 754px;
+}
+
 .form-login {
   float: left;
 }
 
-.login-message {
-  width: 360px;
-  margin-right: 40px;
-}
-
-.email-message {
-  width: 360px;
-  margin-right: 40px;
-}
-
 .form-mail {
   float: right;
+  padding-bottom: 35px;
+}
+
+.form-text {
+  clear: both;
 }

@@ -37,7 +37,7 @@
       <div class="container clearfix">
         <form class="form" action="#" method="post" name="features">
           <div class="form-slider">
-            <h2 class="title-2">Стоимость:</h2>
+            <h2 class="slider-title slider-title-price">Стоимость:</h2>
             <div class="slider-price">
               <div class="toggle">
               </div>
@@ -48,15 +48,19 @@
               <div class="bar-scale">
               </div>
             </div>
-            <div class="range">
-              <label for="range-from">от</label>
-              <input type="text" name="price-from" id="range-from">
-              <label for="range-to">до</label>
-              <input type="text" name="price-to" id="range-to">
+            <div class="range clearfix">
+              <div class="range-item">
+                <label for="range-from">от</label>
+                <input class="range-item-input" type="text" name="price-from" id="range-from">
+              </div>
+              <div class="range-item">
+                <label for="range-to">до</label>
+                <input class="range-item-input" type="text" name="price-to" id="range-to">
+              </div>
             </div>
           </div>
           <div class="slider-network">
-            <h2 class="title-2">Сетка:</h2>
+            <h2 class="slider-title">Сетка:</h2>
             <div class="network-slide">
               <input type="radio" name="network" id="slide-1" value="adaptive" checked>
               <label class="slider-text" for="slide-1">Адаптивная</label>
@@ -71,7 +75,7 @@
             </div>
           </div>
           <div class="slider-option">
-            <h2 class="title-2">Особенности:</h2>
+            <h2 class="slider-title">Особенности:</h2>
             <div class="option-slide">
               <input type="checkbox" name="slider" id="option-1" checked>
               <label class="slider-text" for="option-1">Слайдер</label>
@@ -220,13 +224,18 @@
     <div class="form-message">
       <form action="#" method="post" name="message">
         <h2 class="title-message">Напишите нам</h2>
-        <button class="close-message" type="button">Закрыть</button>
-        <label for="login-field">Ваше имя:</label>
-        <input class="login-message" type="text" name="login" id="login-field" value="Предстывтесь, пожалуйста">
-        <label for="email-field">Ваш e-mail:</label>
-        <input class="email-message" type="text" name="email" id="email-field" value="Для отправки ответа">
-        <label for="text-message">Текст письма:</label>
-        <textarea name="input-field" id="text-message">В свободной форме</textarea>
+        <div class="form-login">
+          <label class="form-label" for="login-field">Ваше имя:</label>
+          <input class="input-text" type="text" name="login" id="login-field" value="Предстывтесь, пожалуйста">
+        </div>
+        <div class="form-mail">
+          <label class="form-label" for="email-field">Ваш e-mail:</label>
+          <input class="input-text" type="text" name="email" id="email-field" value="Для отправки ответа">
+        </div>
+        <div class="form-text">
+          <label class="form-label" for="text-message">Текст письма:</label>
+          <textarea class="input-textarea" name="input-field" id="text-message">В свободной форме</textarea>
+        </div>
         <input class="post-message" type="submit" value="Отправить">
       </form>
     </div>
