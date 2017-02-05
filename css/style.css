@@ -19,3 +19,327 @@ h2 {
   color: #000000;
   font-weight: bold;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  font-size: 0;
+  width: 1160px;
+  outline: 3px solid green;
+}
+
+.logo-menu-link {
+  display: inline-block;
+  width: 160px;
+  height: 65px;
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 200px;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 110px;
+  font-size: 16px;
+}
+
+.basket {
+  display: inline-block;
+  width: 160px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.main-title-catalog {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 115px;
+  margin: 0;
+}
+
+.slider {
+  width: 1160px;
+}
+
+.features {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  outline: 2px solid red;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.content {
+  padding-bottom: 75px;
+  outline: 2px solid green;
+}
+
+.content-left {
+  float: left;
+  padding-top: 80px;
+  padding-bottom: 54px;
+  width: 660px;
+  outline: 2px solid black;
+}
+
+.content-left-fragment {
+  padding-bottom: 35px;
+  font-size: 16px;
+}
+
+.content-left-paragraph {
+  margin: 0;
+  padding-bottom: 23px;
+  font-size: 16px;
+}
+
+.content-left-title {
+  padding-bottom: 47px;
+  margin: 0;
+}
+
+.content-left-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.content-right {
+  float: right;
+  width: 360px;
+  padding-top: 40px;
+  margin-left: 140px;
+  outline: 2px solid black;
+}
+
+
+
+.content-right-img {
+  float: right;
+  padding-bottom: 40px;
+}
+
+.content-right-fragment {
+  text-align: center;
+  padding-bottom: 47px;
+  margin: 0;
+}
+
+.content-right-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  float: left;
+  width: 110px;
+}
+
+.figure {
+  float: left;
+}
+
+.criterion {
+  float: left;
+}
+
+.logos {
+  width: 1160px;
+  margin-bottom: 80px;
+}
+
+.logo {
+  float: left;
+  width: 290px;
+  height: 180px;
+  background: white url("../img/map.jpg") no-repeat center;
+}
+
+.htmlacademy {
+  background: white url("../img/htmlacademy-logo.png") no-repeat center;
+}
+
+.bardershop {
+  background: white url("../img/bardershop-logo.jpg") no-repeat center;
+}
+
+.pink {
+  background: white url("../img/pink-logo.jpg") no-repeat center;
+}
+
+.mishka {
+  background: white url("../img/mishka-logo.jpg") no-repeat center;
+}
+
+.form {
+  float: left;
+  width: 260px;
+  margin-right: 140px;
+}
+
+.slider-title-price {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+.range {
+  width: 260px;
+}
+
+.range-item {
+  float: left;
+}
+
+.range-item:first-child {
+  padding-right: 40px;
+}
+
+.range-item-input {
+  width: 80px;
+}
+
+.catalog {
+  float: right;
+  width: 760px;
+}
+
+.title-2 {
+  float: left;
+  width: 160px;
+  margin: 0;
+}
+
+.slider-network {}
+
+.network-slide {
+  display: block;
+}
+
+.option-slide {
+  display: block;
+}
+
+.separate {
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+.separate-item {
+  float: right;
+}
+
+.layout {
+  width: 760px;
+  padding-bottom: 60px;
+}
+
+.layout-item {
+  width: 360px;
+  float: left;
+  padding-bottom: 36px;
+}
+
+.layout-item:nth-child(2n) {
+  float: right;
+}
+
+.next {
+  padding-bottom: 60px;
+}
+
+.map {
+  height: 416px;
+  background: #e8e6dd url("../img/map.jpg") no-repeat center;
+}
+
+.contact {
+  box-sizing: border-box;
+  width: 319px;
+  padding: 50px;
+  margin-left: 140px;
+  background-color: white;
+}
+
+.main-footer {
+  padding-top: 75px;
+}
+
+.footer-social {
+  float: left;
+  padding-right: 140px;
+  width: 260px;
+}
+
+.social-btn {
+  width: 80px;
+  padding-right: 15px;
+}
+
+.footer-text {
+  float: left;
+  width: 560px;
+}
+
+.form-message {
+  width: 760px;
+  padding-top: 71px;
+  padding-left: 100px;
+  padding-right: 80px;
+  padding-bottom: 85px;
+}
+
+.title-message {
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+.form-label {
+  display: block;
+}
+
+.input-text {
+    width: 356px;
+}
+
+.input-textarea {
+  width: 754px;
+}
+
+.form-login {
+  float: left;
+}
+
+.form-mail {
+  float: right;
+  padding-bottom: 35px;
+}
+
+.form-text {
+  clear: both;
+}

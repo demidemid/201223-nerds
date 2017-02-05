@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a href="#">
+          <a class="logo-menu-link menu" href="#">
             <img class="index-logo" src="img/nerds-logo.png" width="160" height="65" alt="Nerds">
           </a>
           <ul class="menu">
@@ -26,11 +27,11 @@
               <a class="menu-link" href="#">Контакты</a>
             </li>
           </ul>
-          <div class="menu-item">
+          <div class="basket">
             <a class="menu-link" href="#">Корзина</a>
           </div>
         </nav>
-        <div class="slider">
+        <div class="slider clearfix">
           <div class="slide">
             <h2 class="slide-title">Долго, дорого, скурпулёзно.</h1>
             <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -61,7 +62,7 @@
     </header>
     <main>
       <div class="container">
-        <section class="features">
+        <section class="features clearfix">
           <div class="features-item">
             <img class="features-img" src="img/laptop.png" width="300" height="146">
             <h2 class="features-name">Веб-сайты</h2>
@@ -81,12 +82,12 @@
             <a class="btn" href="#">Заказать</a>
           </div>
         </section>
-        <div class="content">
+        <div class="content clearfix">
           <div class="content-left">
             <b class="content-left-fragment">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-            <p class="content-left-text">Исповедуем пронципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p class="content-text">Выполняем заказы на разработку:</p>
-            <ul class="content-list">
+            <p class="content-left-paragraph">Исповедуем пронципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p class="content-left-title">Выполняем заказы на разработку:</p>
+            <ul class="content-left-list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для OS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -94,19 +95,19 @@
           </div>
           <div class="content-right">
             <img class="content-right-img" src="img/nerds-illustration.png" width="360" height="208">
-            <p class="content-text">C 2004 года любим точность во всём:</p>
-            <ul>
-              <li><span class="figure">146<sup>%</sup></span><span class="criterion">уровень самоотдачи</span></li>
-              <li><span class="figure">100<sup>%</sup></span><span class="criterion">соблюдение сроков</span></li>
-              <li><span class="figure">50<sup>%</sup></span><span class="criterion">минимальная предоплата</span></li>
+            <p class="content-right-fragment">C 2004 года любим точность во всём:</p>
+            <ul class="content-right-list">
+              <li class="list-item"><span class="figure">146<sup>%</sup></span><span class="criterion">уровень самоотдачи</span></li>
+              <li class="list-item"><span class="figure">100<sup>%</sup></span><span class="criterion">соблюдение сроков</span></li>
+              <li class="list-item"><span class="figure">50<sup>%</sup></span><span class="criterion">минимальная предоплата</span></li>
             </ul>
           </div>
         </div>
-        <div class="logos">
-          <a class="logos-htmlacademy" href="#">htmlacademy</a>
-          <a class="logos-bardershop" href="#">bardershop</a>
-          <a class="logos-pink" href="#">pink</a>
-          <a class="logos-mishka" href="#">mishka</a>
+        <div class="logos clearfix">
+          <a class="logo htmlacademy" href="#"></a>
+          <a class="logo bardershop" href="#"></a>
+          <a class="logo pink" href="#"></a>
+          <a class="logo mishka" href="#"></a>
         </div>
       </div>
       <div class="map">
@@ -117,7 +118,7 @@
         </div>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
       <div class="container">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -133,13 +134,18 @@
     <div class="form-message">
       <form action="#" method="post" name="message">
         <h2 class="title-message">Напишите нам</h2>
-        <button class="close-message" type="button">Закрыть</button>
-        <label for="login-field">Ваше имя:</label>
-        <input class="login-message" type="text" name="login" id="login-field" value="Предстывтесь, пожалуйста">
-        <label for="email-field">Ваш e-mail:</label>
-        <input class="email-message" type="text" name="email" id="email-field" value="Для отправки ответа">
-        <label for="text-message">Текст письма:</label>
-        <textarea name="input-field" id="text-message">В свободной форме</textarea>
+        <div class="form-login">
+          <label class="form-label" for="login-field">Ваше имя:</label>
+          <input class="input-text" type="text" name="login" id="login-field" value="Предстывтесь, пожалуйста">
+        </div>
+        <div class="form-mail">
+          <label class="form-label" for="email-field">Ваш e-mail:</label>
+          <input class="input-text" type="text" name="email" id="email-field" value="Для отправки ответа">
+        </div>
+        <div class="form-text">
+          <label class="form-label" for="text-message">Текст письма:</label>
+          <textarea class="input-textarea" name="input-field" id="text-message">В свободной форме</textarea>
+        </div>
         <input class="post-message" type="submit" value="Отправить">
       </form>
     </div>
