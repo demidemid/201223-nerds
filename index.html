@@ -10,7 +10,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a class="log-menu-link menu" href="#">
+          <a class="logo-menu-link menu" href="#">
             <img class="index-logo" src="img/nerds-logo.png" width="160" height="65" alt="Nerds">
           </a>
           <ul class="menu">
@@ -85,8 +85,8 @@
         <div class="content clearfix">
           <div class="content-left">
             <b class="content-left-fragment">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-            <p class="content-left-paragraph1">Исповедуем пронципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p class="content-left-paragraph2">Выполняем заказы на разработку:</p>
+            <p class="content-left-paragraph">Исповедуем пронципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p class="content-left-title">Выполняем заказы на разработку:</p>
             <ul class="content-left-list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для OS и Android</li>
@@ -95,19 +95,19 @@
           </div>
           <div class="content-right">
             <img class="content-right-img" src="img/nerds-illustration.png" width="360" height="208">
-            <p class="content-right">C 2004 года любим точность во всём:</p>
+            <p class="content-right-fragment">C 2004 года любим точность во всём:</p>
             <ul class="content-right-list">
-              <li><span class="figure">146<sup>%</sup></span><span class="criterion">уровень самоотдачи</span></li>
-              <li><span class="figure">100<sup>%</sup></span><span class="criterion">соблюдение сроков</span></li>
-              <li><span class="figure">50<sup>%</sup></span><span class="criterion">минимальная предоплата</span></li>
+              <li class="list-item"><span class="figure">146<sup>%</sup></span><span class="criterion">уровень самоотдачи</span></li>
+              <li class="list-item"><span class="figure">100<sup>%</sup></span><span class="criterion">соблюдение сроков</span></li>
+              <li class="list-item"><span class="figure">50<sup>%</sup></span><span class="criterion">минимальная предоплата</span></li>
             </ul>
           </div>
         </div>
         <div class="logos clearfix">
-          <a class="logo" href="#">htmlacademy</a>
-          <a class="logo" href="#">bardershop</a>
-          <a class="logo" href="#">pink</a>
-          <a class="logo" href="#">mishka</a>
+          <a class="logo htmlacademy" href="#"></a>
+          <a class="logo bardershop" href="#"></a>
+          <a class="logo pink" href="#"></a>
+          <a class="logo mishka" href="#"></a>
         </div>
       </div>
       <div class="map">
@@ -118,7 +118,8 @@
         </div>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
+      <div class="container">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -134,12 +135,18 @@
       <form action="#" method="post" name="message">
         <h2 class="title-message">Напишите нам</h2>
         <button class="close-message" type="button">Закрыть</button>
-        <label for="login-field">Ваше имя:</label>
-        <input class="login-message" type="text" name="login" id="login-field" value="Предстывтесь, пожалуйста">
-        <label for="email-field">Ваш e-mail:</label>
-        <input class="email-message" type="text" name="email" id="email-field" value="Для отправки ответа">
-        <label for="text-message">Текст письма:</label>
-        <textarea name="input-field" id="text-message">В свободной форме</textarea>
+        <div class="form-login">
+          <label for="login-field">Ваше имя:</label>
+          <input class="login-message" type="text" name="login" id="login-field" value="Предстывтесь, пожалуйста">
+        </div>
+        <div class="form-mail">
+          <label for="email-field">Ваш e-mail:</label>
+          <input class="email-message" type="text" name="email" id="email-field" value="Для отправки ответа">
+        </div>
+        <div class="form-text clearfix">
+          <label for="text-message">Текст письма:</label>
+          <textarea name="input-field" id="text-message">В свободной форме</textarea>
+        </div>
         <input class="post-message" type="submit" value="Отправить">
       </form>
     </div>
