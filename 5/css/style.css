@@ -56,6 +56,10 @@ h2 {
   background-position: -5px -93px;
 }
 
+.main-header {
+  background: #eeeeee;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -65,6 +69,7 @@ h2 {
 .main-navigation {
   font-size: 0;
   width: 1160px;
+  outline: red;
 }
 
 .logo-menu-link {
@@ -116,17 +121,17 @@ h2 {
 
 
 .basket {
-  display: inline-block;
-  vertical-align: middle;
+  float: right;
   text-align: right;
-  width: 160px;
+  width: 130px;
+  padding-top: 18px;
   font-size: 16px;
 }
 
 .cart {
   display: block;
   position: relative;
-  width: 160px;
+  width: 130px;
 }
 
 .cart::before {
@@ -150,19 +155,122 @@ h2 {
 }
 
 .slider {
+  position: relative;
   width: 1160px;
+  height: 430px;
+  margin:0 auto;
+}
+
+.slider input[type=radio] {
+  position:absolute;
+  opacity:0;
+}
+
+.slider-controls{
+  position:absolute;
+  bottom:95px;
+  left:50%;
+  width:200px;
+  height:10px;
+  margin-left:-100px;
+  text-align:center;
+  z-index:1000;
+}
+
+.slider-controls label{
+    display:inline-block;
+    width:4px;
+    height:4px;
+    margin:0 3px;
+    background:white;
+    border: 5px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background:#c1c1c1;
+}
+
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide p {
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.slide-text1 {
+  width: 380px;
+  padding-bottom: 30px 0;
+}
+
+.slide-text2 {
+  width: 520px;
+  padding-bottom: 30px 0;
+}
+
+.slide-text2 p {
+  width: 420px;
+}
+
+.slide-text3 {
+  width: 450px;
+  padding-bottom: 30px 0;
+}
+
+.slide-text3 p {
+  width: 360px;
 }
 
 .slide-title {
   margin: 0;
+  margin-top: 85px;
   padding-bottom: 25px;
   font-size: 55px;
   line-height: 55px;
+  font-weight: bold;
 }
 
-.slide-text {
-  margin: 0;
-  padding-bottom: 42px;
+.slide:nth-child(1){
+  background: #eeeeee url("../img/slide1.png") no-repeat;
+  background-position: 100% 17px;
+}
+
+.slide:nth-child(2){
+  background: #eeeeee url("../img/slide2.png") no-repeat;
+  background-position: 100% 0;
+}
+.slide:nth-child(3){
+  background: #eeeeee url("../img/slide3.png") no-repeat;
+  background-position: 100% 19px;
+}
+
+.slide{
+    display:none;
+}
+
+.slide:nth-child(1){
+    display:block;
+
+}
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
 }
 
 .btn {
@@ -260,6 +368,7 @@ h2 {
 }
 
 .features-text {
+  width: 260px;
   margin: 0;
   padding-bottom: 35px;
 }
@@ -270,12 +379,13 @@ h2 {
 
 .content {
   padding-bottom: 75px;
+  border-top: 2px solid #eeeeee;
 }
 
 .content-left {
   float: left;
   padding-top: 80px;
-  padding-bottom: 54px;
+
   width: 660px;
 }
 
@@ -310,6 +420,10 @@ h2 {
   position: relative;
   padding-left: 40px;
   padding-bottom: 35px;
+}
+
+.content-left-list li:last-child {
+  padding-bottom: 0;
 }
 
 .content-left-list li::before {
@@ -369,6 +483,8 @@ h2 {
 .logos {
   width: 1160px;
   margin-bottom: 80px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .logo {
@@ -596,7 +712,7 @@ h2 {
 }
 
 .form-label {
-  
+
 }
 
 .form-item {
