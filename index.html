@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="header-logo">
-          <a><img width="" height="" src="" alt="Nerds"></a>
-        </div>
-        <nav class="header-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="shop-activity">
-          <a href="#">Корзина</a>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="header-logo">
+        <a><img width="160px" height="65px" src="img/nerds-logo.png" alt="Nerds"></a>
       </div>
-    </header>
-    <div class="slider">
+      <nav class="header-navigation">
+        <ul>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="shop-activity">
+        <a href="#">Корзина</a>
+      </div>
+    </div>
+  </header>
+  <div class="slider-background">
+    <div class="slider container">
+
       <input type="radio" id="btn-1" name="toggle" checked>
       <input type="radio" id="btn-2" name="toggle">
       <input type="radio" id="btn-3" name="toggle">
@@ -47,144 +49,155 @@
           <div class="slide-text">
             <div class="slide-title">Долго, дорого, скрупулезно</div>
             <p>Математически выверенный дизайн<br>
-для вашего сайта или мобильного приложения.</p>
-            <a class="btn" href="#">Узнать больше</a>
+              для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Дорого, скрупулезно</div>
+              <p>Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Скрупулезно</div>
+                <p>Математически выверенный дизайн<br>
+                  для вашего сайта или мобильного приложения.</p>
+                  <a class="btn" href="#">Узнать больше</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="slide">
-          <div class="slide-text">
-            <div class="slide-title">Дорого, скрупулезно</div>
-            <p>Математически выверенный дизайн<br>
-для вашего сайта или мобильного приложения.</p>
-            <a class="btn" href="#">Узнать больше</a>
+        <div class="products container">
+          <article class="item web">
+            <div class="product-image">
+              <img width="300" height="146" src="img/laptop.png">
+            </div>
+
+            <section class="product-info">
+              <h2>Веб-сайты</h2>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            </section>
+
+            <a class="btn" href="#">Заказать</a>
+          </article>
+
+          <article class="item app">
+            <div class="product-image">
+              <img width="300" height="146" src="img/smartphone.png">
+            </div>
+
+            <section class="product-info">
+              <h2>Приложения</h2>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            </section>
+
+            <a class="btn" href="#">Заказать</a>
+          </article>
+
+          <article class="item presentation">
+            <div class="product-image">
+              <img width="300" height="146" src="img/presentation.png">
+            </div>
+
+            <section class="product-info">
+              <h2>Презентация</h2>
+              <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
+            </section>
+
+            <a class="btn" href="#">Заказать</a>
+          </article>
+        </div>
+        <div class="information container">
+          <section class="info">
+            <span class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</span>
+
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+              превыше креатива. Работаем не покладая рук, как роботы.</p>
+
+              <h3>Выполняем заказы на разработку:</h3>
+
+              <ul class="dev-orders">
+                <li>Веб-сайтов любой сложности</li>
+                <li>Мобильных приложений для iOS и Android</li>
+                <li>Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </section>
+            <div class="statistic">
+              <div class="logo">
+                <img width="360" height="208" src="img/nerds-illustration.png">
+              </div>
+              <span>с 2004 года Любим точность во всем:</span>
+              <section class="stat-info">
+                <div class="column">
+                  <b>146<span class="percent">%</span></b>
+                  <p>Уровень самоотдачи</p>
+                </div>
+                <div class="column">
+                  <b>100<span class="percent">%</span></b>
+                  <p>Соблюдение сроков</p>
+                </div>
+                <div class="column">
+                  <b>50<span class="percent">%</span></b>
+                  <p>Минимальная предоплата</p>
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
-        <div class="slide">
-          <div class="slide-text">
-            <div class="slide-title">Скрупулезно</div>
-            <p>Математически выверенный дизайн<br>
-для вашего сайта или мобильного приложения.</p>
-            <a class="btn" href="#">Узнать больше</a>
+          <div class="logotypes container">
+
+            <div class="brand">
+              <a href="#"><img width="199" height="68" src="img/logo-1.png" alt="HTML Academy"></a>
+            </div>
+            <div class="brand">
+              <a href="#"><img width="209" height="90" src="img/logo-2.png" alt="Barbershop Borodinski"></a>
+            </div>
+            <div class="brand">
+              <a href="#"><img width="185" height="52" src="img/logo-3.png" alt="Pink"></a>
+            </div>
+            <div class="brand">
+              <a href="#"><img width="173" height="84" src="img/logo-4.png" alt="Mishka"></a>
+            </div>
+
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="products container">
-      <article class="item web">
-        <div class="product-image">
-          <img width="" height="" src="">
-        </div>
+          <div class="map">
 
-        <section class="product-info">
-          <h2>Веб-сайты</h2>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        </section>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=I0QRDXo0eJkKzXls2Dzy3nNmhVzpqVRN&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
 
-        <a class="btn" href="#">Заказать</a>
-      </article>
+            <div class="write-us">
+              <h3>NЁRDS DESIGN STUDIO</h3>
 
-      <article class="item app">
-        <div class="product-image">
-          <img width="" height="" src="">
-        </div>
+              <p>191186, Санкт-Петербург, <br>
+                ул. Б. Конюшенная, д. 19/8</p>
 
-        <section class="product-info">
-          <h2>Приложения</h2>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-        </section>
+                <p>тел. +7 (812) 275-75-75</p>
 
-        <a class="btn" href="#">Заказать</a>
-      </article>
+                <button class="btn">Напишите нам</button>
+              </div>
 
-      <article class="item presentation">
-        <div class="product-image">
-          <img width="" height="" src="">
-        </div>
+            </div>
+            <footer class="main-footer container">
 
-        <section class="product-info">
-          <h2>Презентация</h2>
-          <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-        </section>
+              <div class="social">
+                <a class="icon" href="#">
+                  <span class="circle vk"></span>
+                </a>
+                <a class="icon" href="#">
+                  <span class="circle fb"></span>
+                </a>
+                <a class="icon" href="#">
+                  <span class="circle insta"></span>
+                </a>
+              </div>
+              <div class="slogan">
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+              </div>
 
-        <a class="btn" href="#">Заказать</a>
-      </article>
-    </div>
-    <div class="presentation">
-      <section class="info">
-        <span class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</span>
-
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          превыше креатива. Работаем не покладая рук, как роботы.</p>
-
-        <h3>Выполняем заказы на разработку:</h3>
-
-        <ul class="dev-orders">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
-      <div class="statistic">
-        <div class="logo">
-          <img width="" height="" src="">
-        </div>
-        <span>с 2004 года Любим точность во всем:</span>
-        <section class="stat-info">
-          <div class="column">
-            <b>146<span class="percent">%</span></b>
-            <p>Уровень самоотдачи</p>
-          </div>
-          <div class="column">
-            <b>100<span class="percent">%</span></b>
-            <p>Соблюдение сроков</p>
-          </div>
-          <div class="column">
-            <b>50<span class="percent">%</span></b>
-            <p>Минимальная предоплата</p>
-          </div>
-        </section>
-      </div>
-    </div>
-    <div class="logotypes">
-      <div class="container">
-        <div class="brand">
-          <a href="#"><img width="" height="" src="" alt="HTML Academy"></a>
-        </div>
-        <div class="brand">
-          <a href="#"><img width="" height="" src="" alt="Barbershop Borodinski"></a>
-        </div>
-        <div class="brand">
-          <a href="#"><img width="" height="" src="" alt="Pink"></a>
-        </div>
-        <div class="brand">
-          <a href="#"><img width="" height="" src="" alt="Mishka"></a>
-        </div>
-      </div>
-    </div>
-    <div class="map">
-      <div class="write-us">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-
-        <p>191186, Санкт-Петербург, <br>
-          ул. Б. Конюшенная, д. 19/8</p>
-
-        <p>тел. +7 (812) 275-75-75</p>
-
-        <button class="btn">Напишите нам</button>
-      </div>
-    </div>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="social">
-          <a class="icon" href="#">Вконтакте</a>
-          <a class="icon" href="#">Facebook</a>
-          <a class="icon" href="#">Instagram</a>
-        </div>
-        <div class="slogan">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </div>
-    </footer>
- </body>
-</html>
+            </footer>
+          </body>
+          </html>
