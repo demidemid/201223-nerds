@@ -257,3 +257,199 @@ body {
   box-sizing: border-box;
   margin-right: 13px;
 }
+
+
+/* ============================ CATALOG.HTML ========================== */
+
+.page-title {
+  height: 233px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.filters {
+  width: 260px;
+  margin-right: 100px;
+}
+
+/* ===================== RANGE FILTER ================================= */
+
+.range-filter {
+  width: 260px;
+  margin: 50px auto;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+/* ========================== RESULT TOP ====================== */
+
+.result-top {
+  display: flex;
+}
+
+.result-top h3 {
+  display: inline-block;
+  width: 360px;
+}
+
+.sort-types {
+  width: 360px;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.sort-types li {
+  display: inline-block;
+}
+
+/* ================== RESULT CONTENT ====================== */
+
+.result-content {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.result-content .layout {
+  width: 360px;
+  margin-right: 40px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.layout-top {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  background-color: #eeeeee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 7px;
+}
+
+.layout-top span {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-left: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.layout-menu {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 230px;
+  width: 360px;
+
+  top: 385px;
+  left: 0;
+
+  background-color: #eeeeee;
+  color: #000000;
+  padding: 0 80px;
+
+  box-sizing: border-box;
+}
+
+.layout-menu .btn {
+  width: 200px;
+  height: 50px;
+  background-color: #fb565a;
+  border: 0;
+
+}
+
+.layout-menu p {
+  text-align: center;
+}
+
+.pagination .btn {
+  display: inline-block;
+  background-color: #eeeeee;
+  min-width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-right: 11px;
+  color: #000000;
+
+}
+
+.pagination .next {
+  padding-left: 79px;
+  padding-right: 79px;
+}
