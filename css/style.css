@@ -17,6 +17,7 @@ body {
     text-decoration: none;
     border-radius: 3px;
     border: 0;
+    cursor: pointer;
 }
 
 .container {
@@ -315,6 +316,10 @@ body {
 .column .percent {
   font-size: 28px;
   vertical-align: super;
+}
+
+.column p {
+  line-height: 18px;
 }
 
 .logotypes {
