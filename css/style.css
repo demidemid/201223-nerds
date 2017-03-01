@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -10,12 +10,13 @@ body {
 .btn {
     display: block;
     padding: 10px 0;
-    font-size: 12px;
+    font-size: 16px;
     color: white;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     border-radius: 3px;
+    border: 0;
 }
 
 .container {
@@ -32,16 +33,55 @@ body {
 }
 
 .header-navigation {
+  display: flex;
+  min-width: 440px;
   margin-left: 200px;
+  min-width: 490px;
 }
 
 .header-navigation li {
   display: inline-block;
+  margin-right: 45px;
+}
+
+.header-navigation ul {
+  padding-left: 0;
+  margin-top: 26px;
+}
+
+.header-navigation .current {
+  border-bottom: 2px solid #fb565a;
+  padding-bottom: 8px;
+}
+
+.style-menu a {
+  font-weight: 500;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .shop-activity {
-  margin-left: 285px;
+  position: relative;
+  margin-left: 235px;
+  margin-top: 26px;
 }
+
+.shop-activity::before {
+  content: "";
+  position: absolute;
+
+  top: 5px;
+  left: -40px;
+
+  width: 15px;
+  height: 15px;
+  background: transparent url("../img/cart-icon.png") no-repeat;
+  background-position: 1px 1px;
+  z-index: 10;
+}
+
 
 /* ==========================================================
               SLIDER
@@ -160,7 +200,6 @@ body {
     width: 160px;
     padding: 10px 0;
     margin-top: 25px;
-    font-size: 12px;
     color: white;
     text-transform: uppercase;
     text-align: center;
@@ -185,7 +224,12 @@ body {
 ==========================================================*/
 
 .information {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.information.container {
+  border-top: 2px solid #eeeeee;
 }
 
 .stat-info .column {
@@ -193,7 +237,84 @@ body {
 }
 
 .info {
-  width: 660px;
+  min-width: 670px;
+  margin-right: 130px;
+}
+
+.info .slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.info p {
+  margin-top: 35px;
+}
+
+.info h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-top: 40px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.dev-orders {
+  list-style-type: none;
+  margin-top: 23px;
+}
+
+.dev-orders li {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.dev-orders li::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -35px;
+
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.statistic {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.statistic .logo {
+  margin-top: -32px;
+}
+
+.statistic > span {
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.stat-info {
+  display: flex;
+  margin-top: 45px;
+}
+
+.stat-info .column {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.column b {
+  font-size: 45px;
+  line-height: 10px;
+  color: #000000;
+}
+
+.column .percent {
+  font-size: 28px;
+  vertical-align: super;
 }
 
 .logotypes {
@@ -201,6 +322,7 @@ body {
   height: 180px;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 80px;
   opacity: 0.2;
 }
 
@@ -210,25 +332,46 @@ body {
 }
 
 .map {
-  padding-top: 80px;
   height: 416px;
   width: 100%;
   position: relative;
 }
 
 .write-us {
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
 
-  top: 134px;
+  bottom: 54px;
   left: calc((100% - 1160px) / 2);
 
   width: 320px;
   height: 310px;
   background-color: #ffffff;
   color: #666666;
+  padding: 0 50px;
   padding-top: 55px;
-  padding-left: 50px;
+  padding-bottom: 47px;
   box-sizing: border-box;
+}
+
+.write-us .btn {
+  width: 219px;
+  height: 50px;
+  background-color: #fb565a;
+  margin-top: auto;
+
+}
+
+.write-us h3 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.write-us p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 /* =====================================================
@@ -249,15 +392,61 @@ body {
 
 .social .circle {
   display: inline-block;
+  position: relative;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background-color: #e1e1e1;
   color: #000000;
   box-sizing: border-box;
-  margin-right: 13px;
+  margin-right: 9px;
 }
 
+.vk::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 15px;
+
+  top: 35px;
+  left: 27px;
+
+  background-image: url("../img/vk-icon.png");
+}
+
+.fb::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 22px;
+
+  top: 30px;
+  left: 33px;
+
+  background-image: url("../img/fb-icon.png");
+}
+
+.insta::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+
+  top: 30px;
+  left: 30px;
+
+  background-image: url("../img/insta-icon.png");
+}
+.footer-slogan b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-slogan p {
+  line-height: 22px;
+  color: #444444;
+  margin-top: 6px;
+}
 
 /* ============================ CATALOG.HTML ========================== */
 
@@ -270,16 +459,40 @@ body {
   color: #000000;
 }
 
+.content {
+  padding-top: 62px;
+}
+
+.slogan h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+
 .filters {
   width: 260px;
   margin-right: 100px;
+}
+
+.content h2,
+.content ul {
+  margin-top: 0;
+}
+
+.content h2 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 /* ===================== RANGE FILTER ================================= */
 
 .range-filter {
   width: 260px;
-  margin: 50px auto;
+  margin-top: 50px;
+  margin-bottom: 62px;
 }
 
 .range-controls {
@@ -318,19 +531,20 @@ body {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
-  font-size: 0;
+  display: flex;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .price-controls label {
-  font-size: 16px;
   display: inline-block;
   width: 50%;
 }
@@ -352,13 +566,106 @@ body {
   background: #f1f1f1;
 }
 
+/* =============== WEB / FEATURES / BUTTON ======================================*/
+
+.web,
+.features {
+  margin-bottom: 43px;
+}
+
+.web label {
+  display: block;
+}
+
+.features label {
+  display: block;
+}
+
+.form .btn {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.checkbox,
+.radio {
+  display: none;
+}
+
+.radio-custom {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border: 3px solid #b8b8b8;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.checkbox-custom {
+  position: relative;
+  height: 23px;
+  width: 23px;
+  border: 3px solid #b8b8b8;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.label {
+  line-height: 20px;
+  color: #283136;
+  margin-left: 10px;
+}
+
+.features label,
+.web label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  top: -3px;
+  left: -3px;
+
+  width: 27px;
+  height: 23px;
+  background: #ffffff url("../img/checkbox-on.png") no-repeat;
+  z-index: 10;
+  opacity: 0.4;
+}
+
+.radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  top: 5px;
+  left: 5px;
+
+  width: 9px;
+  height: 9px;
+  background-color: #b8b8b8;
+  border: 3px solid #b8b8b8;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
 /* ========================== RESULT TOP ====================== */
 
 .result-top {
   display: flex;
+  padding-left: 40px;
+  align-items: center;
 }
 
-.result-top h3 {
+.result-top h2 {
   display: inline-block;
   width: 360px;
 }
@@ -373,7 +680,69 @@ body {
   display: inline-block;
 }
 
+.sort-types a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+a.current {
+  opacity: 1;
+}
+
+.by-price,
+.by-type {
+  margin-right: 22px;
+}
+
+.by-name {
+  margin-right: 46px;
+}
+
+.less-to-more {
+  position: relative;
+  margin-right: 25px;
+}
+
+.less-to-more::before {
+  content: "";
+  position: absolute;
+
+  top: 4px;
+  left: 0;
+
+  width: 9px;
+  height: 9px;
+  background: #ffffff url("../img/sort-down.png") no-repeat;
+}
+
+.more-to-less {
+    position: relative;
+}
+
+.more-to-less::before {
+  content: "";
+  position: absolute;
+
+  top: -9px;
+  left: 0;
+
+  width: 9px;
+  height: 9px;
+  background: #ffffff url("../img/sort-up.png") no-repeat;
+}
+
+
+
+
 /* ================== RESULT CONTENT ====================== */
+
+.content {
+  margin-bottom: 60px;
+}
 
 .result-content {
   width: 800px;
@@ -384,9 +753,13 @@ body {
 
 .result-content .layout {
   width: 360px;
-  margin-right: 40px;
+  margin-left: 40px;
   position: relative;
   margin-bottom: 40px;
+}
+
+.layout:hover > .layout-menu {
+  display: flex;
 }
 
 .layout-top {
@@ -409,10 +782,10 @@ body {
 }
 
 .layout-menu {
-  display: flex;
+  display: none;
   position: absolute;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 230px;
   width: 360px;
 
@@ -421,9 +794,13 @@ body {
 
   background-color: #eeeeee;
   color: #000000;
-  padding: 0 80px;
+  /*padding: 0 80px;*/
 
   box-sizing: border-box;
+}
+
+.layout-menu p {
+  width: 230px;
 }
 
 .layout-menu .btn {
@@ -431,25 +808,43 @@ body {
   height: 50px;
   background-color: #fb565a;
   border: 0;
+  margin-top: auto;
+  margin-bottom: 43px;
+}
 
+.layout-menu h2 {
+  margin-top: 27px;
+  margin-bottom: 26px;
 }
 
 .layout-menu p {
   text-align: center;
+  line-height: 18px;
+  color: #666666;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.content-navigation {
+  padding-left: 40px;
 }
 
 .pagination .btn {
   display: inline-block;
   background-color: #eeeeee;
+  border: 3px solid #eeeeee;
   min-width: 50px;
   height: 50px;
-  box-sizing: border-box;
-  margin-right: 11px;
+  margin-right: 8px;
   color: #000000;
-
+  box-sizing: border-box;
 }
 
 .pagination .next {
   padding-left: 79px;
   padding-right: 79px;
+}
+
+.pagination .current {
+  background-color: #ffffff;
 }
